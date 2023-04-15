@@ -1,6 +1,7 @@
 # 修改web端口
 sed -i "s/80 default_server/50080 default_server/g" /etc/config/nginx
 sed -i "s/[::]:80 default_server/[::]:50080 default_server/g" /etc/config/nginx
+sed -i "s/:80/:50080/g" /etc/config/uhttpd
 # /etc/init.d/nginx restart
 
 echo '#!/bin/bash
