@@ -14,8 +14,7 @@ fi
 #一直检测是否过期
 while true; do
   # 30*60 每30分钟检测一次
-  # todo 00
-  sleep 18
+  sleep 1800
   str_limit=$(cat ${limit_date_file})
   str_now=$(date "+%Y-%m-%d %H:%M:%S")
   date_limit=$(date -d "$str_limit" +%s)
@@ -24,7 +23,6 @@ while true; do
     echo "现在时间:${str_now},过期时间:${str_limit}没有过期" >>/tmp/log/check.log
   else
     echo "现在时间:${str_now},过期时间:${str_limit}过期了直接关机" >>/tmp/log/check.log
-    # todo
-    #    halt
+    halt
   fi
 done
