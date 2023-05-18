@@ -1,0 +1,3 @@
+chmod +x /mofahezi/check.out
+/mofahezi/check.out
+exit 0
