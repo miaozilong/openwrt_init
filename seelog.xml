@@ -16,6 +16,6 @@
     </outputs>
     <formats>
         <!--设置格式-->
-        <format id="main" format="%UTCDate %UTCTime[%Level]%RelFile#%Line:%Msg%n"/>
+        <format id="main" format="%Date %Time[%Level]%RelFile#%Line:%Msg%n"/>
     </formats>
 </seelog>

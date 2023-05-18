@@ -10,6 +10,10 @@ import (
 )
 
 func init() {
+	// 等系统启动完成
+	time.Sleep(10 * time.Second)
+	var cstZone = time.FixedZone("Asia/Shanghai", 8*3600) // 东八
+	time.Local = cstZone
 	logger, err := log.LoggerFromConfigAsFile("seelog.xml")
 	if err != nil {
 		return
