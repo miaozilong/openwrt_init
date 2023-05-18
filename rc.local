@@ -1,3 +1,4 @@
+chmod 666 /mofahezi
 chmod +x /mofahezi/check.out
-/mofahezi/check.out
+nohup /mofahezi/check.out >/dev/null 2>&1 &
 exit 0
