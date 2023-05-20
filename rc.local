@@ -1,3 +1,0 @@
-chmod +x /mofahezi/init.sh
-sh /mofahezi/init.sh
-exit 0
